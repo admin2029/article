@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        ul{
+            width: 400px;
+            height: 400px;
+             position: relative; transition: all 5s linear 0s;
+             list-style: none;
+             transform-style: preserve-3d;
+             margin: 100px auto;
+            
+             
+        }
+        ul:hover {
+            transform: rotateY(1360deg) rotateX(1360deg);
+        perspective: 19000px
+        }
+        .box ul li{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: #fff;
+        }
+       .box .item1{
+        background: url("./imgs/46/1.jpg");
+        transform:translateZ(200px)
+        }
+        .box .item2{
+        background: url("./imgs/46/2.jpg");
+        transform: translateZ(-200px);
+        }
+
+        .box .item3{
+        background: url("./imgs/46/3.jpg");
+        transform: rotateY(-90deg)  translateZ(200px) ;
+        }
+
+        .box .item4{
+        background: url("./imgs/46/4.jpg");
+        transform: rotateY(90deg) translateZ(200px);
+
+        }
+
+        .box .item5{
+        background: url("./imgs/46/5.jpg");
+        transform: rotateX(90deg) translateZ(200px);
+        }
+
+        .box .item6{
+        background: url("./imgs/46/6.jpg");
+        transform: rotateX(-90deg) translateZ(200px);;
+        }
+
+
+
+     
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li class="item1">前</li>
+            <li class="item2">后</li>
+            <li class="item3">左</li>
+            <li class="item4">右</li>
+            <li class="item5">上</li>
+            <li class="item6">下</li>
+        </ul>
+    </div>
+</body>
+</html>
